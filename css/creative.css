@@ -6,6 +6,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  outline: none;
 }
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
@@ -190,6 +191,21 @@ li.lang .dropdown-menu a {
     font-size: 1.1rem !important;
     color: #fff
 }
+
+a.btn-light[href*="services"] {
+    width: 60px !important;
+    background-color: transparent;
+    height: 60px !important;
+    padding: 5px !important;
+    border: 2px solid #fff !important;
+    box-sizing: border-box !important;
+    color: #fff;
+    z-index: 1;
+}
+a.btn-light[href*="services"]:hover {
+    box-shadow: 0 0 10px 0 #fff;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     border-color: rgba(105,54,47,1.0);
@@ -312,7 +328,7 @@ header.masthead p {
     }
 }
 .text-primary {
-  color: #F05F40 !important;
+  color: #9D4B41 !important;
 }
 .btn {
   font-weight: 700;
@@ -337,4 +353,35 @@ header.masthead p {
 }
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+
+
+
+.row > div.col-lg-3 {
+    box-shadow: 0px 8px 36px -20px #000;
+    transition: all ease 0.4s;
+    margin: 0px;
+}
+.row > div.col-lg-3:hover {
+    cursor: pointer;
+    box-shadow: 0px 12px 25px -12px #000;
+}
+
+a.btn-light[href*="services"]:hover,
+a.btn-light[href*="services"]:active,
+a.btn-light[href*="services"]:focus {
+    box-shadow: 0px 0px 7px 0px #fff;
+}
+.row div.col-lg-12:first-of-type {
+    padding: 0 !important;
+}
+
+div.col-lg-8 a.btn-xl:hover,
+div.col-lg-8 a.btn-xl:active,
+div.col-lg-8 a.btn-xl:focus {
+    background-color: transparent!important;
+    color: #fff !important;
+    box-shadow: 0;
+    border: 0;
 }
